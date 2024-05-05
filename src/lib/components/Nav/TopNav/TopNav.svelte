@@ -4,7 +4,7 @@
 	import LogoutIcon from '$lib/assets/icons/LogoutIcon.svelte';
 </script>
 
-<div class="py-2 px-5 bg-white/50 rounded-3xl flex md:flex-row justify-between">
+<div class="py-2 px-5 bg-white/50 rounded-3xl flex md:flex-row justify-between shadow-xl">
 	<div class="flex flex-row gap-2">
 		<img
 			src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"

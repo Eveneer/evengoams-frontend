@@ -4,11 +4,11 @@
 	import TopNav from '$lib/components/Nav/TopNav/TopNav.svelte';
 </script>
 
-<main class="p-5 flex flex-col gap-5 min-h-screen w-full max-w-[1200px] mx-auto">
+<main class="p-5 flex flex-col gap-5 min-h-screen w-full max-w-[1800px] mx-auto">
 	<TopNav />
-	<div class="flex flex-row gap-5 w-full max-w-[1200px] mx-auto relative">
+	<div class="flex flex-row gap-5 w-full max-w-[1800px] mx-auto relative">
 		<SideNav />
-		<div class="w-[75%] rounded-2xl min-h-[1002vh] border-2 border-black p-5">
+		<div class="w-full min-h-[82vh]">
 			<slot />
 		</div>
 	</div>
