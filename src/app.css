@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.transit {
+	@apply ease-linear transition-all duration-300;
+}
+
 body {
-	@apply bg-yellow-100;
+	@apply bg-slate-300;
+}
+
+body * {
+	@apply transit;
 }
