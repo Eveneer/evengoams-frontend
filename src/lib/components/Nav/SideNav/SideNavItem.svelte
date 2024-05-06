@@ -17,7 +17,7 @@
 			type="button"
 			on:click={toggleActive}
 			class="{!isActive
-				? 'flex flex-row gap-3 rounded-2xl p-2 bg-blue-300 hover:bg-blue-700 hover:text-white'
+				? 'flex flex-row gap-3 rounded-2xl p-2 bg-blue-500 hover:bg-cyan-500 text-white'
 				: 'flex flex-row gap-3 rounded-none p-2 border-b-2 border-gray-500'} cursor-pointer"
 		>
 			<span>{item.label}</span>
@@ -38,7 +38,7 @@
 {:else}
 	<a
 		href={item.type === 'link' ? item.href : '/#'}
-		class="flex flex-row gap-3 rounded-2xl p-2 bg-blue-300 hover:bg-blue-700 hover:text-white"
+		class="flex flex-row gap-3 rounded-2xl p-2 bg-blue-500 hover:bg-cyan-500 text-white"
 	>
 		<span>{item.label}</span>
 	</a>
