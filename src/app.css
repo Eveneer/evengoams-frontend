@@ -13,3 +13,35 @@ body {
 body * {
 	@apply transit;
 }
+
+.nsb::-webkit-scrollbar {
+	display: none !important;
+}
+
+.nsb {
+	-ms-overflow-style: none !important;
+	scrollbar-width: none !important;
+}
+
+.card {
+	@apply bg-white/50 p-5 rounded-2xl shadow-xl;
+}
+
+input {
+	@apply rounded-2xl border-[1.5px] border-gray-500/50 px-2 py-1 focus:border-x-0 focus:border-t-0 focus:border-b-[3px] focus:rounded-none focus:!outline-none focus:bg-transparent duration-150;
+}
+
+input.search {
+	background-image: url('https://www.w3schools.com/css/searchicon.png');
+	background-position: 7.5px 5px;
+	background-repeat: no-repeat;
+	@apply pl-8 focus:bg-[top_7.5px_left_-22px] focus:bg-opacity-0 focus:overflow-hidden focus:pl-2;
+}
+
+.pagination-btn {
+	@apply bg-blue-500 rounded-xl w-[30px] h-[30px] flex flex-col justify-center text-white hover:bg-teal-500;
+}
+
+.pagination-btn.active {
+	@apply !bg-gray-500  cursor-not-allowed;
+}
