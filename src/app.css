@@ -24,7 +24,7 @@ body * {
 }
 
 .card {
-	@apply bg-white/50 p-5 rounded-2xl shadow-xl;
+	@apply bg-white/50 p-5 rounded-2xl shadow-lg;
 }
 
 input,
@@ -53,6 +53,10 @@ input.search {
 
 .input-container label {
 	@apply text-[0.8rem] ml-2;
+}
+
+.btn {
+	@apply bg-blue-500 text-white hover:bg-teal-500 px-3 py-1.5 rounded-xl;
 }
 
 .btn-group {
