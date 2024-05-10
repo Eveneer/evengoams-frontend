@@ -57,11 +57,8 @@
 		on:click_outside={onFocusOut}
 	/>
 	<label for={id}>{label}</label>
-	<!-- class="absolute bg-slate-300 w-full top-[35px] shadow-2xl rounded-b-3xl nsb overflow-y-auto {showResults
-			? 'min-h-[68px] max-h-[250px]'
-			: 'min-h-[0px] max-h-[0px]'}" -->
 	<div
-		class="absolute bg-slate-300 w-full top-[35px] shadow-2xl rounded-b-3xl nsb overflow-y-auto {showResults
+		class="absolute bg-slate-300 w-full top-[35px] shadow-2xl rounded-b-3xl nsb overflow-y-auto z-10 {showResults
 			? 'min-h-[68px] max-h-[250px]'
 			: 'min-h-[0px] max-h-[0px]'}"
 	>
