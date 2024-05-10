@@ -1,9 +1,9 @@
-import { searchResultDisplayKeys } from '$lib/constants';
-import type { SearchResultType } from '$lib/types/search';
+import { searchResultDisplayKeys } from '../constants';
+import type { SearchResultType } from '../types/search';
 
 export const ucfirst = (s: string) => s[0].toUpperCase() + s.slice(1);
 
-{/* @ts-expect-error */}
+// {/* @ts-expect-error */}
 export const searchResultName = (r: SearchResultType) => r.data[searchResultDisplayKeys[r.type]];
 
 export const clickOutside = (node: Node) => {
@@ -27,4 +27,24 @@ export const getValueFromEvent = (event: Event) => {
 
 	if (target) return target.value;
 	return '';
+};
+
+export const parseDate = (date: string) => {
+	const parts: string[] = date.split('-');
+	const months = [
+		'Jan',
+		'Feb',
+		'Mar',
+		'Apr',
+		'May',
+		'Jun',
+		'Jul',
+		'Aug',
+		'Sep',
+		'Oct',
+		'Nov',
+		'Dec'
+	];
+
+	return `${parts[2]} ${months[parseInt(parts[1])]} ${parts[0]}`;
 };

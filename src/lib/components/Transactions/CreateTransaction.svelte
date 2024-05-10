@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import DateInput from '../Inputs/DateInput.svelte';
 	import NumberInput from '../Inputs/NumberInput.svelte';
 	import RadioInput from '../Inputs/RadioInput.svelte';

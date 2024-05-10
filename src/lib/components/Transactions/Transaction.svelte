@@ -1,28 +1,9 @@
 <script lang="ts">
 	import ChevronIcon from '$lib/assets/icons/ChevronIcon.svelte';
 	import type { TransactionType } from '$lib/types/transactions';
+	import { parseDate } from '$lib/utils';
 
 	export let transaction: TransactionType;
-
-	const parseDate = (date: string) => {
-		const parts: string[] = date.split('-');
-		const months = [
-			'Jan',
-			'Feb',
-			'Mar',
-			'Apr',
-			'May',
-			'Jun',
-			'Jul',
-			'Aug',
-			'Sep',
-			'Oct',
-			'Nov',
-			'Dec'
-		];
-
-		return `${parts[2]} ${months[parseInt(parts[1])]} ${parts[0]}`;
-	};
 </script>
 
 <div class="card flex flex-row justify-between gap-5 text-[0.8rem]">
