@@ -1,6 +1,6 @@
 import type { DonorType } from './donors';
 
-export interface Pledges {
+export interface PledgesType {
 	id: string;
 	donor_id: string;
 	donor: DonorType;
