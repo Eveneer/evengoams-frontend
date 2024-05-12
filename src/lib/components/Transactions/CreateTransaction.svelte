@@ -26,11 +26,7 @@
 		</div>
 
 		<div class="flex flex-row gap-5 w-full">
-			<RadioInput
-				label="Transaction Type"
-				callback={(s) => {}}
-				options={['Income', 'Expense']}
-			/>
+			<RadioInput label="Transaction Type" callback={(s) => {}} options={['Income', 'Expense']} />
 		</div>
 
 		<div class="flex flex-row gap-5">
@@ -56,6 +52,14 @@
 				id="transaction_note"
 				label="Transaction Note"
 				placeholder="Note"
+				callback={(s) => {}}
+			/>
+		</div>
+		<div class="flex flex-row gap-5">
+			<SearchInput
+				id="transaction_category"
+				label="Transaction Category"
+				searchCallback={async () => []}
 				callback={(s) => {}}
 			/>
 		</div>

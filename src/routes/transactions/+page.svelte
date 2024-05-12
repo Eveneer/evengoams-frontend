@@ -29,24 +29,26 @@
 	};
 </script>
 
-<div class="flex flex-row gap-5">
-	<div class="w-[60%] flex flex-col gap-5 relative">
+<div class="flex flex-row gap-5 xl:gap-10">
+	<div class="w-[60%] flex flex-col gap-3 relative">
 		{#each transactions as transaction}
 			<Transaction {transaction} />
 		{/each}
 	</div>
 
 	<div class="w-[40%] relative">
-		<div class="flex flex-col gap-5 sticky top-[116px]">
+		<div class="flex flex-col gap-5 xl:gap-10 sticky top-[116px] xl:top-[136px]">
 			<div class="card flex flex-col gap-5">
 				<input type="text" name="" id="" placeholder="Search..." class="w-full search" />
-				<div class="mx-auto flex flex-row justify-between w-full">
+				<div class="mx-auto flex flex-col xl:flex-row gap-5 justify-between w-full">
 					<button class="btn !px-10">Add Transaction</button>
-					<Pagination {paginationData} />
+					<div class="mx-auto xl:mx-0">
+						<Pagination {paginationData} />
+					</div>
 				</div>
 			</div>
 
-			<div class="flex flex-col gap- h-[40vh] card w-full justify-center">
+			<div class="flex flex-col gap-5 h-[40vh] card w-full justify-center">
 				<h3 class="text-center">Stats Section</h3>
 				<ul class="list-disc mx-auto">
 					<li class="font-mono text-[0.8rem]">
@@ -55,9 +57,9 @@
 					<li class="font-mono text-[0.8rem]">
 						Total expense in last x period (filterable by x and period)
 					</li>
-                    <li class="font-mono text-[0.8rem]">
-                        Linear graph showing incomes and expenses (cash flow)
-                    </li>
+					<li class="font-mono text-[0.8rem]">
+						Linear graph showing incomes and expenses (cash flow)
+					</li>
 				</ul>
 			</div>
 		</div>

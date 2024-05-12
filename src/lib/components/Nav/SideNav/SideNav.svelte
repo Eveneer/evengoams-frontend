@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="flex flex-col gap-3 w-[25%] max-w-[300px] card mb-auto sticky top-[116px] overflow-y-auto max-h-[82vh]"
+	class="flex flex-col gap-3 w-[25%] max-w-[300px] card mb-auto sticky top-[116px] xl:top-[136px] overflow-y-auto max-h-[82vh]"
 >
 	{#each sideNavItems as item (item)}
 		<SideNavItem {item} />
