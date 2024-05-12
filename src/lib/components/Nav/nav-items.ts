@@ -35,6 +35,11 @@ export const sideNavItems: NavItemType[] = [
 		label: 'Employees',
 		type: 'link',
 		href: '/employees'
+	},
+	{
+		label: 'Projects',
+		type: 'link',
+		href: '/projects'
 	}
 ];
 
