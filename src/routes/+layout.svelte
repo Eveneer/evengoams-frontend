@@ -2,6 +2,12 @@
 	import '../app.css';
 	import SideNav from '$lib/components/Nav/SideNav/SideNav.svelte';
 	import TopNav from '$lib/components/Nav/TopNav/TopNav.svelte';
+	import type { PageData } from './$types';
+	import { fade } from 'svelte/transition';
+
+	export let data: PageData;
+
+	$: pathname = data.url;
 </script>
 
 <main
@@ -9,12 +15,14 @@
 >
 	<div
 		class="fixed top-0 left-0 w-full h-[90px] bg-gradient-to-b from-slate-800 to-slate-300/50 z-10"
-	></div>
+	/>
 	<TopNav />
 	<div class="flex flex-row gap-5 xl:gap-10 w-full max-w-[1800px] mx-auto relative">
-		<SideNav />
-		<div class="w-full min-h-[82vh] xl:min-h-[80vh]">
-			<slot />
-		</div>
+		<SideNav {pathname} />
+		{#key pathname}
+			<div class="w-full min-h-[82vh] xl:min-h-[80vh]">
+				<slot />
+			</div>
+		{/key}
 	</div>
 </main>
