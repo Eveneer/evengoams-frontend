@@ -78,3 +78,8 @@ input.search {
 .tag-btn span {
 	@apply my-auto;
 }
+
+.collapsible-row-slot,
+.collapsible-row-slot div {
+	@apply flex flex-row gap-5 first:w-full;
+}
