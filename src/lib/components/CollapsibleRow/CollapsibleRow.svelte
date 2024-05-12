@@ -2,7 +2,7 @@
 	import ChevronIcon from '$lib/assets/icons/ChevronIcon.svelte';
 	import autoAnimate from '@formkit/auto-animate';
 
-	let isOpen: boolean = false;
+	let isOpen: boolean = true;
 
 	const toggleOpen = () => (isOpen = !isOpen);
 </script>
