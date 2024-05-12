@@ -13,7 +13,7 @@
 	<TopNav />
 	<div class="flex flex-row gap-5 xl:gap-10 w-full max-w-[1800px] mx-auto relative">
 		<SideNav />
-		<div class="w-full min-h-[82vh]">
+		<div class="w-full min-h-[82vh] xl:min-h-[80vh]">
 			<slot />
 		</div>
 	</div>
