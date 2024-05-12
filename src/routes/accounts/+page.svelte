@@ -1,9 +1,8 @@
 <script lang="ts">
-	import Pagination from '$lib/components/Pagination/Pagination.svelte';
-
 	import a from './sample-accounts.json';
 	import { type AccountType } from '$lib/types/accounts';
 	import Account from '$lib/components/Accounts/Account.svelte';
+	import DomainPanel from '$lib/components/DomainPanel/DomainPanel.svelte';
 
 	const accounts: AccountType[] = a as AccountType[];
 
@@ -39,15 +38,7 @@
 
 	<div class="w-[40%] relative">
 		<div class="flex flex-col gap-5 xl:gap-10 sticky top-[116px] xl:top-[136px]">
-			<div class="card flex flex-col gap-5">
-				<input type="text" name="" id="" placeholder="Search..." class="w-full search" />
-				<div class="mx-auto flex flex-col xl:flex-row gap-5 justify-between w-full">
-					<button class="btn !px-10">Add Account</button>
-					<div class="mx-auto xl:mx-0">
-						<Pagination {paginationData} />
-					</div>
-				</div>
-			</div>
+			<DomainPanel {paginationData} domainName="Account" />
 
 			<div class="flex flex-col gap- h-[40vh] card w-full justify-center">
 				<h3 class="text-center">Stats Section</h3>

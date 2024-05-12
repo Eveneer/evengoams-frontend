@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Transaction from '$lib/components/Transactions/Transaction.svelte';
-	import t from './sample-transactions.json';
-	import { type TransactionType } from '$lib/types/transactions';
+	import Donor from '$lib/components/Donors/Donor.svelte';
+	import d from './sample-donors.json';
 	import DomainPanel from '$lib/components/DomainPanel/DomainPanel.svelte';
+	import type { DonorType } from '$lib/types/donors';
 
-	const transactions: TransactionType[] = t as TransactionType[];
+	const donors: DonorType[] = d as DonorType[];
 
 	const paginationData = {
 		total: 50,
@@ -31,8 +31,8 @@
 
 <div class="flex flex-row gap-5 xl:gap-10">
 	<div class="w-[60%] flex flex-col gap-3 relative">
-		{#each transactions as transaction}
-			<Transaction {transaction} />
+		{#each donors as donor}
+			<Donor {donor} />
 		{/each}
 	</div>
 
@@ -41,17 +41,9 @@
 			<DomainPanel {paginationData} domainName="Transaction" />
 
 			<div class="flex flex-col gap-5 h-[40vh] card w-full justify-center">
-				<h3 class="text-center">Stats Section</h3>
+				<h3 class="text-center">Section</h3>
 				<ul class="list-disc mx-auto">
-					<li class="font-mono text-[0.8rem]">
-						Total income in last x period (filterable by x and period)
-					</li>
-					<li class="font-mono text-[0.8rem]">
-						Total expense in last x period (filterable by x and period)
-					</li>
-					<li class="font-mono text-[0.8rem]">
-						Linear graph showing incomes and expenses (cash flow)
-					</li>
+					<li class="font-mono text-[0.8rem]">Undecided</li>
 				</ul>
 			</div>
 		</div>
