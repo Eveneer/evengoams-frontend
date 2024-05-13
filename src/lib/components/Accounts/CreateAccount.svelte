@@ -1,5 +1,6 @@
 <script lang="ts">
 	import DateInput from '../Inputs/DateInput.svelte';
+	import LineInput from '../Inputs/LineInput.svelte';
 	import NumberInput from '../Inputs/NumberInput.svelte';
 	import RadioInput from '../Inputs/RadioInput.svelte';
 	import SearchInput from '../Inputs/SearchInput.svelte';
@@ -7,64 +8,20 @@
 	import TextInput from '../Inputs/TextInput.svelte';
 </script>
 
-<div class="relative bg-slate-300 rounded-2xl">
+<div class="relative bg-slate-300 rounded-2xl min-w-[500px]">
 	<div class="card flex flex-col gap-5 sticky top-[20px]">
-		<h3 class="text-center w-full p-2 bg-white rounded-full">Add Transction</h3>
+		<h3 class="text-center w-full p-2 bg-white rounded-full">Add Account</h3>
+
 		<div class="flex flex-row gap-5">
-			<div class="w-[40%]">
-				<DateInput
-					id="transaction_date"
-					label="Transaction Date"
-					min="2025-05-01"
-					max="2024-06-05"
-					callback={(s) => {}}
-				/>
-			</div>
-			<div class="w-[60%] flex flex-col gap-0">
-				<NumberInput id="transaction_amount" label="Transaction Amount" callback={(s) => {}} />
-			</div>
+			<LineInput id="account_name" label="Account Name" callback={(s) => {}} />
 		</div>
 
 		<div class="flex flex-row gap-5 w-full">
-			<RadioInput label="Transaction Type" callback={(s) => {}} options={['Income', 'Expense']} />
+			<NumberInput id="account_balance" label="Initial Balance" callback={(n) => {}} />
 		</div>
 
-		<div class="flex flex-row gap-5">
-			<div class="w-[50%] flex flex-col gap-0">
-				<SearchInput
-					id="transaction_from"
-					label="Payee"
-					searchCallback={async () => []}
-					callback={(s) => {}}
-				/>
-			</div>
-			<div class="w-[50%] flex flex-col gap-0">
-				<SearchInput
-					id="transaction_to"
-					label="Recipient"
-					searchCallback={async () => []}
-					callback={(s) => {}}
-				/>
-			</div>
-		</div>
-		<div class="flex flex-row gap-5">
-			<TextInput
-				id="transaction_note"
-				label="Transaction Note"
-				placeholder="Note"
-				callback={(s) => {}}
-			/>
-		</div>
-		<div class="flex flex-row gap-5">
-			<SearchInput
-				id="transaction_category"
-				label="Transaction Category"
-				searchCallback={async () => []}
-				callback={(s) => {}}
-			/>
-		</div>
-		<div class="flex flex-row gap-5">
-			<TagsInput id="transaction_tags" label="Transaction Tags" callback={(s) => {}} />
+		<div class="flex flex-row gap-5 w-full">
+			<RadioInput label="Account Type" callback={(s) => {}} options={['Cash', 'Bank', 'Mobile']} />
 		</div>
 	</div>
 </div>
