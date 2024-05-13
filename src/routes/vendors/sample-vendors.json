@@ -1,0 +1,173 @@
+[
+	{
+		"id": "1",
+		"name": "ABC Services",
+		"type": "service",
+		"tag_ids": ["1", "2"],
+		"contacts": ["John Doe", "Jane Smith"],
+		"created_at": "2024-05-01",
+		"updated_at": "2024-05-01"
+	},
+	{
+		"id": "2",
+		"name": "XYZ Supplies",
+		"type": "product",
+		"tag_ids": ["3", "4"],
+		"contacts": ["David Brown", "Emily Wilson"],
+		"created_at": "2024-05-02",
+		"updated_at": "2024-05-02"
+	},
+	{
+		"id": "3",
+		"name": "Smith & Co.",
+		"type": "service",
+		"tag_ids": ["5", "6"],
+		"contacts": ["Michael Davis", "Jennifer Martinez"],
+		"created_at": "2024-05-03",
+		"updated_at": "2024-05-03"
+	},
+	{
+		"id": "4",
+		"name": "Tech Solutions",
+		"type": "service",
+		"tag_ids": ["7", "8"],
+		"contacts": ["Robert Taylor", "Mary Clark"],
+		"created_at": "2024-05-04",
+		"updated_at": "2024-05-04"
+	},
+	{
+		"id": "5",
+		"name": "Global Products",
+		"type": "product",
+		"tag_ids": ["9", "10"],
+		"contacts": ["William Adams", "Patricia White"],
+		"created_at": "2024-05-05",
+		"updated_at": "2024-05-05"
+	},
+	{
+		"id": "6",
+		"name": "Creative Designs",
+		"type": "service",
+		"tag_ids": ["11", "12"],
+		"contacts": ["Christopher Lee", "Jessica Harris"],
+		"created_at": "2024-05-06",
+		"updated_at": "2024-05-06"
+	},
+	{
+		"id": "7",
+		"name": "Best Supplies",
+		"type": "product",
+		"tag_ids": ["13", "14"],
+		"contacts": ["Daniel Thompson", "Sarah Martin"],
+		"created_at": "2024-05-07",
+		"updated_at": "2024-05-07"
+	},
+	{
+		"id": "8",
+		"name": "Innovative Services",
+		"type": "service",
+		"tag_ids": ["15", "16"],
+		"contacts": ["Mark Wilson", "Michelle Jackson"],
+		"created_at": "2024-05-08",
+		"updated_at": "2024-05-08"
+	},
+	{
+		"id": "9",
+		"name": "Dynamic Solutions",
+		"type": "service",
+		"tag_ids": ["17", "18"],
+		"contacts": ["Ryan Harris", "Lisa Taylor"],
+		"created_at": "2024-05-09",
+		"updated_at": "2024-05-09"
+	},
+	{
+		"id": "10",
+		"name": "Prime Products",
+		"type": "product",
+		"tag_ids": ["19", "20"],
+		"contacts": ["Matthew Martinez", "Amanda Thompson"],
+		"created_at": "2024-05-10",
+		"updated_at": "2024-05-10"
+	},
+	{
+		"id": "11",
+		"name": "Sunrise Services",
+		"type": "service",
+		"tag_ids": ["21", "22"],
+		"contacts": ["John Doe", "Jane Smith"],
+		"created_at": "2024-05-11",
+		"updated_at": "2024-05-11"
+	},
+	{
+		"id": "12",
+		"name": "Moonlight Supplies",
+		"type": "product",
+		"tag_ids": ["23", "24"],
+		"contacts": ["David Brown", "Emily Wilson"],
+		"created_at": "2024-05-12",
+		"updated_at": "2024-05-12"
+	},
+	{
+		"id": "13",
+		"name": "Star Services",
+		"type": "service",
+		"tag_ids": ["25", "26"],
+		"contacts": ["Michael Davis", "Jennifer Martinez"],
+		"created_at": "2024-05-13",
+		"updated_at": "2024-05-13"
+	},
+	{
+		"id": "14",
+		"name": "Galaxy Products",
+		"type": "product",
+		"tag_ids": ["27", "28"],
+		"contacts": ["Robert Taylor", "Mary Clark"],
+		"created_at": "2024-05-14",
+		"updated_at": "2024-05-14"
+	},
+	{
+		"id": "15",
+		"name": "Milky Way Designs",
+		"type": "service",
+		"tag_ids": ["29", "30"],
+		"contacts": ["William Adams", "Patricia White"],
+		"created_at": "2024-05-15",
+		"updated_at": "2024-05-15"
+	},
+	{
+		"id": "16",
+		"name": "Solar Supplies",
+		"type": "product",
+		"tag_ids": ["31", "32"],
+		"contacts": ["Christopher Lee", "Jessica Harris"],
+		"created_at": "2024-05-16",
+		"updated_at": "2024-05-16"
+	},
+	{
+		"id": "17",
+		"name": "Comet Services",
+		"type": "service",
+		"tag_ids": ["33", "34"],
+		"contacts": ["Daniel Thompson", "Sarah Martin"],
+		"created_at": "2024-05-17",
+		"updated_at": "2024-05-17"
+	},
+	{
+		"id": "18",
+		"name": "Asteroid Products",
+		"type": "product",
+		"tag_ids": ["35", "36"],
+		"contacts": ["Mark Wilson", "Michelle Jackson"],
+		"created_at": "2024-05-18",
+		"updated_at": "2024-05-18"
+	},
+	{
+		"id": "19",
+		"name": "Galactic Services",
+		"type": "service",
+		"tag_ids": ["37", "38"],
+		"contacts": ["Ryan Harris", "Lisa Taylor"],
+		"created_at": "2024-05-19",
+		"updated_at": "2024-05-19"
+	}
+]
