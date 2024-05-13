@@ -9,8 +9,8 @@
 
 <a
 	href={item.type === 'link' ? item.href : '/#'}
-	class="border-2 {isActive
-		? 'border-black delay-300'
+	class=" {isActive
+		? 'delay-300 bg-blue-500 text-white'
 		: 'card border-transparent hover:bg-teal-300'} rounded-2xl px-5 !py-3 flex flex-row justify-between group transit min-h-[58px]"
 	use:autoAnimate
 >
