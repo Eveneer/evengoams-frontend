@@ -18,7 +18,7 @@
 <div
 	class="fixed overflow-hidden bg-black/30 w-full h-screen z-50 flex flex-col justify-center {modalData
 		? 'top-0 left-0 w-[100vw] h-[100vh]'
-		: 'left-[50vw] top-[50vh] w-[0vw] h-[0vh]'}"
+		: 'left-[50vw] top-[50vh] w-[0vw] h-[0vh] rounded-2xl'}"
 >
 	<div class="mx-auto relative">
 		<button

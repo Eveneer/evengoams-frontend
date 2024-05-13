@@ -3,6 +3,7 @@
 	import DomainPanel from '$lib/components/DomainPanel/DomainPanel.svelte';
 	import Vendor from '$lib/components/Vendors/Vendor.svelte';
 	import type { VendorType } from '$lib/types/vendors';
+	import CreateVendor from '$lib/components/Vendors/CreateVendor.svelte';
 
 	const vendors: VendorType[] = v as VendorType[];
 
@@ -38,7 +39,7 @@
 
 	<div class="w-[40%] relative">
 		<div class="flex flex-col gap-5 xl:gap-10 sticky top-[116px] xl:top-[136px]">
-			<DomainPanel {paginationData} domainName="Vendor" />
+			<DomainPanel {paginationData} domainName="Vendor" modalComponent={CreateVendor} />
 
 			<div class="flex flex-col gap-5 h-[40vh] card w-full justify-center">
 				<h3 class="text-center">Section</h3>
