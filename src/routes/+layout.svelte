@@ -4,6 +4,7 @@
 	import TopNav from '$lib/components/Nav/TopNav/TopNav.svelte';
 	import type { PageData } from './$types';
 	import { fade } from 'svelte/transition';
+	import Modal from '$lib/components/Modal/Modal.svelte';
 
 	export let data: PageData;
 
@@ -25,4 +26,5 @@
 			</div>
 		{/key}
 	</div>
+	<Modal />
 </main>

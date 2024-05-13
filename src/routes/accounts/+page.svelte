@@ -3,6 +3,7 @@
 	import { type AccountType } from '$lib/types/accounts';
 	import Account from '$lib/components/Accounts/Account.svelte';
 	import DomainPanel from '$lib/components/DomainPanel/DomainPanel.svelte';
+	import CreateAccount from '$lib/components/Accounts/CreateAccount.svelte';
 
 	const accounts: AccountType[] = a as AccountType[];
 
@@ -38,7 +39,7 @@
 
 	<div class="w-[40%] relative">
 		<div class="flex flex-col gap-5 xl:gap-10 sticky top-[116px] xl:top-[136px]">
-			<DomainPanel {paginationData} domainName="Account" />
+			<DomainPanel {paginationData} domainName="Account" modalComponent={CreateAccount} />
 
 			<div class="flex flex-col gap- h-[40vh] card w-full justify-center">
 				<h3 class="text-center">Stats Section</h3>
