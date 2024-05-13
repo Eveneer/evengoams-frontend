@@ -7,7 +7,7 @@
 	import TextInput from '../Inputs/TextInput.svelte';
 </script>
 
-<div class="w-[40%] relative">
+<div class="bg-slate-300 rounded-2xl relative">
 	<div class="card flex flex-col gap-5 sticky top-[20px]">
 		<h3 class="text-center w-full p-2 bg-white rounded-full">Add Transction</h3>
 		<div class="flex flex-row gap-5">
