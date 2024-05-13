@@ -11,6 +11,6 @@
 </script>
 
 <div class="input-container">
-	<textarea {name} {id} {placeholder} on:change={callCallback}> </textarea>
+	<textarea {name} {id} {placeholder} on:change={callCallback} />
 	<label for={id}>{label}</label>
 </div>

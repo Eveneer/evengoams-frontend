@@ -3,6 +3,7 @@
 	import d from './sample-donors.json';
 	import DomainPanel from '$lib/components/DomainPanel/DomainPanel.svelte';
 	import type { DonorType } from '$lib/types/donors';
+	import CreateDonor from '$lib/components/Donors/CreateDonor.svelte';
 
 	const donors: DonorType[] = d as DonorType[];
 
@@ -38,7 +39,7 @@
 
 	<div class="w-[40%] relative">
 		<div class="flex flex-col gap-5 xl:gap-10 sticky top-[116px] xl:top-[136px]">
-			<DomainPanel {paginationData} domainName="Donor" />
+			<DomainPanel {paginationData} domainName="Donor" modalComponent={CreateDonor} />
 
 			<div class="flex flex-col gap-5 h-[40vh] card w-full justify-center">
 				<h3 class="text-center">Section</h3>

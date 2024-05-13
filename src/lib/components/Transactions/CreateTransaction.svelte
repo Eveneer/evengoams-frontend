@@ -10,6 +10,7 @@
 <div class="relative bg-slate-300 rounded-2xl min-w-[500px]">
 	<div class="card flex flex-col gap-5 sticky top-[20px]">
 		<h3 class="text-center w-full p-2 bg-white rounded-full">Add Transction</h3>
+
 		<div class="flex flex-row gap-5">
 			<div class="w-[40%]">
 				<DateInput
@@ -20,17 +21,15 @@
 					callback={(s) => {}}
 				/>
 			</div>
-			<div class="w-[60%] flex flex-col gap-0">
+			<div class="w-[60%]">
 				<NumberInput id="transaction_amount" label="Transaction Amount" callback={(s) => {}} />
 			</div>
 		</div>
 
-		<div class="flex flex-row gap-5 w-full">
-			<RadioInput label="Transaction Type" callback={(s) => {}} options={['Income', 'Expense']} />
-		</div>
+		<RadioInput label="Transaction Type" callback={(s) => {}} options={['Income', 'Expense']} />
 
 		<div class="flex flex-row gap-5">
-			<div class="w-[50%] flex flex-col gap-0">
+			<div class="flex-1">
 				<SearchInput
 					id="transaction_from"
 					label="Payee"
@@ -38,7 +37,7 @@
 					callback={(s) => {}}
 				/>
 			</div>
-			<div class="w-[50%] flex flex-col gap-0">
+			<div class="flex-1">
 				<SearchInput
 					id="transaction_to"
 					label="Recipient"
@@ -47,24 +46,21 @@
 				/>
 			</div>
 		</div>
-		<div class="flex flex-row gap-5">
-			<TextInput
-				id="transaction_note"
-				label="Transaction Note"
-				placeholder="Note"
-				callback={(s) => {}}
-			/>
-		</div>
-		<div class="flex flex-row gap-5">
-			<SearchInput
-				id="transaction_category"
-				label="Transaction Category"
-				searchCallback={async () => []}
-				callback={(s) => {}}
-			/>
-		</div>
-		<div class="flex flex-row gap-5">
-			<TagsInput id="transaction_tags" label="Transaction Tags" callback={(s) => {}} />
-		</div>
+
+		<TextInput
+			id="transaction_note"
+			label="Transaction Note"
+			placeholder="Note"
+			callback={(s) => {}}
+		/>
+
+		<SearchInput
+			id="transaction_category"
+			label="Transaction Category"
+			searchCallback={async () => []}
+			callback={(s) => {}}
+		/>
+
+		<TagsInput id="transaction_tags" label="Transaction Tags" callback={(s) => {}} />
 	</div>
 </div>
