@@ -3,11 +3,16 @@
 	import { modalStore } from '$lib/stores';
 
 	import type { ModalStoreDataType } from '$lib/types/modal';
+	import { onMount } from 'svelte';
 
 	let modalData: ModalStoreDataType | undefined;
 
 	modalStore.subscribe((m) => {
 		modalData = m;
+	});
+
+	onMount(() => {
+		console.log(modalData);
 	});
 
 	const closeModal = () => {
@@ -18,7 +23,7 @@
 <div
 	class="fixed overflow-hidden bg-black/30 w-full h-screen z-50 flex flex-col justify-center {modalData
 		? 'top-0 left-0 w-[100vw] h-[100vh]'
-		: 'left-[50vw] top-[50vh] w-[0vw] h-[0vh] rounded-2xl'}"
+		: 'left-[50vw] top-[50vh] !w-[0vw] !h-[0vh] rounded-2xl'}"
 >
 	<div class="mx-auto relative">
 		<button
