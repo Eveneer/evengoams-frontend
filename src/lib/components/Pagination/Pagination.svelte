@@ -6,7 +6,7 @@
 	export let paginationData: Record<string, any>;
 </script>
 
-<div class="flex flex-row gap-2 my-auto" use:autoAnimate>
+<div class="flex flex-row gap-1 my-auto" use:autoAnimate>
 	{#if paginationData.current_page > 1}
 		<button class="pagination-btn">
 			<ExtremeLimitIcon direction="left" size={20} classes="fill-white mx-auto" />
