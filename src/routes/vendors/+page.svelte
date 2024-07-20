@@ -39,7 +39,19 @@
 
 	<div class="w-[40%] relative">
 		<div class="flex flex-col gap-5 xl:gap-10 sticky top-[116px] xl:top-[136px]">
-			<DomainPanel {paginationData} modalComponent={CreateVendor} />
+			<DomainPanel
+				{paginationData}
+				modalComponent={CreateVendor}
+				modalTitle="Add Vendor"
+				modalButtons={[
+					{
+						text: 'Add Vendor',
+						onClick: () => {},
+						classes: 'btn-primary',
+						close: true
+					}
+				]}
+			/>
 
 			<div class="flex flex-col gap-5 h-[40vh] card w-full justify-center">
 				<h3 class="text-center">Section</h3>
