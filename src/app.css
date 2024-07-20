@@ -44,7 +44,7 @@ input.search {
 }
 
 .pagination-btn.active {
-	@apply !bg-gray-500  cursor-not-allowed;
+	@apply !bg-gray-500 cursor-not-allowed;
 }
 
 .input-container {
@@ -56,7 +56,19 @@ input.search {
 }
 
 .btn {
-	@apply bg-blue-500 text-white hover:bg-teal-500 px-3 py-1.5 rounded-xl;
+	@apply px-3 py-1.5 rounded-2xl;
+}
+
+.btn-sm {
+	@apply text-[0.8rem] px-1.5 py-1 rounded-xl;
+}
+
+.btn-primary {
+	@apply bg-blue-500 text-white hover:bg-teal-500;
+}
+
+.btn-danger {
+	@apply bg-rose-500 text-white hover:bg-orange-500;
 }
 
 .btn-group {
@@ -82,4 +94,8 @@ input.search {
 .collapsible-row-slot,
 .collapsible-row-slot div {
 	@apply flex flex-row gap-5 first:w-full;
+}
+
+.cancel-btn {
+	@apply border-2 rounded-full hover:rotate-90 border-rose-400 bg-rose-100;
 }
