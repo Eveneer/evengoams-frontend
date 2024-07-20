@@ -4,6 +4,7 @@
 	import { type TransactionType } from '$lib/types/transactions';
 	import DomainPanel from '$lib/components/DomainPanel/DomainPanel.svelte';
 	import CreateTransaction from '$lib/components/Transactions/CreateTransaction.svelte';
+	import { text } from '@sveltejs/kit';
 
 	const transactions: TransactionType[] = t as TransactionType[];
 
@@ -39,7 +40,19 @@
 
 	<div class="w-[40%] relative">
 		<div class="flex flex-col gap-5 xl:gap-10 sticky top-[116px] xl:top-[136px]">
-			<DomainPanel {paginationData} modalComponent={CreateTransaction} />
+			<DomainPanel
+				{paginationData}
+				modalComponent={CreateTransaction}
+				modalTitle="Add Tranaction"
+				modalButtons={[
+					{
+						text: 'Add Transaction',
+						onClick: () => {},
+						classes: 'btn-primary',
+						close: true
+					}
+				]}
+			/>
 
 			<div class="flex flex-col gap-5 h-[40vh] card w-full justify-center">
 				<h3 class="text-center">Stats Section</h3>
