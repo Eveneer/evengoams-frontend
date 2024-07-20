@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { DonorType } from '$lib/types/donors';
-	import { tzStampToReadableDateTime } from '$lib/utils';
 	import CollapsibleRow from '../CollapsibleRow/CollapsibleRow.svelte';
 
 	export let donor: DonorType;
