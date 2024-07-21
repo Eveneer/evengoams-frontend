@@ -2,6 +2,7 @@
 	import type { AccountType } from '$lib/types/accounts';
 	import { tzStampToReadableDateTime } from '$lib/utils';
 	import CollapsibleRow from '../CollapsibleRow/CollapsibleRow.svelte';
+	import DataPoint from '../CollapsibleRow/DataPoint.svelte';
 
 	export let account: AccountType;
 </script>
@@ -19,7 +20,7 @@
 		</span>
 	</div>
 
-	<div class="flex flex-col w-full" slot="hidden-content">
-		<span class="text-left">Account Open on: {tzStampToReadableDateTime(account.created_at)}</span>
+	<div class="flex flex-row flex-wrap w-full justify-between" slot="hidden-content">
+		<DataPoint label="Opening Date" data={tzStampToReadableDateTime(account.created_at)} />
 	</div>
 </CollapsibleRow>

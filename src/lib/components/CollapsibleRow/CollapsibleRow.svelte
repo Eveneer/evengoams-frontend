@@ -16,13 +16,13 @@
 		<slot name="row">
 			<h1>Primary Content</h1>
 		</slot>
-		<span class="my-auto"
-			><ChevronIcon direction={isOpen ? 'up' : 'right'} size={20} classes="fill-black" /></span
-		>
+		<span class="my-auto">
+			<ChevronIcon direction={isOpen ? 'up' : 'right'} size={20} classes="fill-black" />
+		</span>
 	</div>
 	{#if isOpen}
-		<div class="w-full overflow-hidden max-h-[20vh] mt-3">
-			<div class="border border-gray-500 mb-3"></div>
+		<div class="w-full overflow-y-auto max-h-[100vh] mt-3 relative">
+			<div class="border border-gray-500 mb-3 sticky top-0"></div>
 			<slot name="hidden-content">
 				<h1>Hidden Content of Row</h1>
 			</slot>

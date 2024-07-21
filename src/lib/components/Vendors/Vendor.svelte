@@ -13,17 +13,18 @@
 		</span>
 	</div>
 
-	<div class="flex flex-col gap-3 w-full" slot="hidden-content">
+	<div class="flex flex-row flex-wrap w-full justify-between" slot="hidden-content">
 		<h3 class="w-full border-b-2 border-gray-500 text-left">Contacts</h3>
-		<div class="flex flex-row flex-wrap gap-1">
+		<div class="flex flex-row flex-wrap gap-1 mt-2.5">
 			{#each vendor.contacts as c}
 				<span class="bg-blue-200 rounded-full px-2 py-1">{c}</span>
 			{/each}
 		</div>
-		<h3 class="w-full border-b-2 border-gray-500 text-left">Tags</h3>
-		<div class="flex flex-row flex-wrap gap-1">
+		<div class="w-full flex flex-row gap-1 flex-wrap mt-4 justify-end">
 			{#each vendor.tag_ids as t}
-				<span class="bg-blue-200 rounded-full px-2 py-1">{t}</span>
+				<span class="bg-blue-200 rounded-full px-2.5 py-0.5 border-[1.5px] border-blue-400">
+					{t}
+				</span>
 			{/each}
 		</div>
 	</div>

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { DonorType } from '$lib/types/donors';
 	import CollapsibleRow from '../CollapsibleRow/CollapsibleRow.svelte';
+	import DataPoint from '../CollapsibleRow/DataPoint.svelte';
 
 	export let donor: DonorType;
 </script>
@@ -16,11 +17,11 @@
 		</span>
 	</div>
 
-	<div class="flex flex-row flex-wrap w-full" slot="hidden-content">
-		<span class="text-left w-[50%] my-1">Occupation: {donor.occupation ?? 'N/A'}</span>
-		<span class="text-left w-[50%] my-1">Company: {donor.company ?? 'N/A'}</span>
-		<span class="text-left w-[50%] my-1">Phone: {donor.phone ?? 'N/A'}</span>
-		<span class="text-left w-[50%] my-1">Email: {donor.email ?? 'N/A'}</span>
-		<span class="text-left w-full my-1">Address: {donor.address ?? 'N/A'}</span>
+	<div class="flex flex-row flex-wrap w-full justify-between" slot="hidden-content">
+		<DataPoint label="Occupation" data={donor.occupation ?? 'N/A'} />
+		<DataPoint label="Company" data={donor.company ?? 'N/A'} />
+		<DataPoint label="Phone" data={donor.phone ?? 'N/A'} />
+		<DataPoint label="Email" data={donor.email ?? 'N/A'} />
+		<DataPoint label="Address" data={donor.address ?? 'N/A'} />
 	</div>
 </CollapsibleRow>
