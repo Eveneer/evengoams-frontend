@@ -1,0 +1,27 @@
+[
+	{
+		"name": "John Doe",
+		"email": "john.doe@example.com",
+		"phone": "123-456-7890",
+		"role": "Software Engineer",
+		"salary": "$100,000",
+		"hire_date": "2020-01-01"
+	},
+	{
+		"name": "Jane Smith",
+		"email": "jane.smith@example.com",
+		"phone": "987-654-3210",
+		"role": "Marketing",
+		"salary": "$150,000",
+		"hire_date": "2019-01-01"
+	},
+	{
+		"name": "Monica Smith",
+		"email": "monica.smith@example.com",
+		"phone": "987-654-3210",
+		"role": "Marketing",
+		"salary": "$150,000",
+		"hire_date": "2018-01-01"
+		
+	}
+]
