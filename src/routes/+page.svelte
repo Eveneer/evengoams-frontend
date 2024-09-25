@@ -1,6 +1,15 @@
 <script lang="ts">
 	import DashboardCashFlowChart from '$lib/components/Dashboard/DashboardCashFlowChart.svelte';
 	import DashboardExpenseBreakdownChart from '$lib/components/Dashboard/DashboardExpenseBreakdownChart.svelte';
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		const res = await fetch('http://evengoams.test/sanctum/csrf-cookie', {
+			credentials: 'include'
+		});
+		console.log(document.cookie, 'here');
+		// const data = await res.json();
+	});
 </script>
 
 <div class="flex flex-col gap-5 xl:gap-10">

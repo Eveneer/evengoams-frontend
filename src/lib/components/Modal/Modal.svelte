@@ -19,8 +19,8 @@
 	};
 
 	$: modalClasses = modalData?.show
-		? 'top-0 left-0 w-[100vw] h-[100vh]'
-		: 'left-[50vw] top-[50vh] !w-[0vw] !h-[0vh] rounded-2xl';
+		? 'top-0 left-0 w-[100vw] h-[100vh] opacity-100'
+		: 'left-[50vw] top-[50vh] !w-[0vw] !h-[0vh] opacity-0 rounded-2xl';
 </script>
 
 <div
